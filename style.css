@@ -14,3 +14,11 @@ body {
 section {
 	padding-top: 5rem;
 }
+
+.gallry-img {
+	widows: 100% ;
+}
+
+#gallery .row > * {
+	padding: 0 ;
+}
