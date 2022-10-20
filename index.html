@@ -134,12 +134,44 @@
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     </div>
                 </div>
-              </div>
-             
+              </div>             
             </div>
-            
-
           </div>
+
+      <!-- Mech 3D -->
+      <section id="My-3D">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2> My 3D Animation</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="mech-box" data-aos="fade-right" >
+                <h4 class="mech-name">Mech Blade</h4>
+                <img src="img/3D/2.png" alt="Mech Blade" class="mech-img">
+                <a href="#" class="btn btn-light mech-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="mech-box" data-aos="fade-right" >
+                <h4 class="mech-name">Mech Gunner</h4>
+                <img src="img/3D/3.png" alt="Mech Gunner" class="mech-img">
+                <a href="#" class="btn btn-light mech-detail-button">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="mech-box" data-aos="fade-right" >
+                <h4 class="mech-name">Mech Verus</h4>
+                <img src="img/3D/1.png" alt="Mech Suvor" class="mech-img">
+                <a href="#" class="btn btn-light mech-detail-button">Show Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- akhir Mech 3D -->
 
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,234.7C384,224,480,192,576,176C672,160,768,160,864,176C960,192,1056,224,1152,224C1248,224,1344,192,1392,176L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
 
@@ -323,5 +355,13 @@
   })
   </script>
 
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".mech-box"), {
+      max: 25,
+      speed: 1000,
+      glare: true,
+    });
+  </script>
 </body>
 </html>

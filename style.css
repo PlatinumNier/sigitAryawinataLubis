@@ -22,3 +22,98 @@ section {
 #gallery .row > * {
 	padding: 0 ;
 }
+
+/* My Mech Section */
+
+.mech-box {
+	position: relative;
+	background-color: #7F00FF;
+	border-radius: 10px;
+	height: 500px;
+	transform-style: preserve-3d;
+}
+
+.mech-box::before {
+	content: 'Mech';
+	position: absolute;
+	color: #fff;
+	font-size: 5em;
+	font-weight: bold;
+	font-style: italic;
+	top: 50px;
+	left: -100px;
+	transform: translate(-50%, 0);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.mech-box:hover::before {
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0.2;
+}
+
+.mech-box::after {
+	content: 'Skell';
+	position: absolute;
+	color: #fff;
+	font-size: 4.3em;
+	font-weight: bold;
+	font-style: italic;
+	top: 350px;
+	left: 450px;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.mech-box:hover::after {
+	left: 50%;
+	transform: translate(-50%, 0);
+	opacity: 0.2;
+}
+
+.mech-name {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	opacity: 0;
+	transform: translate3d(0, 0, 50px);
+	transition: 0.5s;
+}
+
+.mech-box:hover .mech-name {
+	top: 33px;
+	opacity: 1;
+}
+
+.mech-detail-button {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translate3d(-50%, 0, 100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.mech-box:hover .mech-detail-button {
+	opacity: 1;
+	bottom: 20px;
+}
+
+.mech-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate3d(-50%, -50%, 80px);
+	max-width: 290px;
+	transition: 0.5s;
+
+}
+
+.mech-box:hover .mech-img {
+	transform: translate3d(-50%, -50%, 100px) scale(1.1);
+}
+
